@@ -3854,11 +3854,6 @@
     "key": "dd53bab1a42f41ae8f0a5c8fd286f456",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/ET_Now_Swadesh_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
-  "1918": {
-    "kid": "26f47e5e485b544287e88e3cb7237319",
-    "key": "4fdd8958908adee8ce158b739d790ef6",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Jio_Cricket_English_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
   "1920": {
     "kid": "6df7c5d495985867913a26342c00ac91",
     "key": "c262295c24f5553876f9ea40c381355f",
