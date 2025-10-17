@@ -604,11 +604,6 @@
     "key": "b4ca95df03a230ba8e23a7226de77d05",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Discovery_Kids_Tamil_MOB/WDVLive/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
-  "551": {
-    "kid": "b9d4acedc66c5660a1e06197a55bccd2",
-    "key": "dd53bab1a42f41ae8f0a5c8fd286f456",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/TEST14_HD_MOB/WDVLive/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
   "554": {
     "kid": "e921b8507a5e5cd1bb4433b3fd1f5e0a",
     "key": "037835bab43e7ef4a41a97c638cd9c1d",
@@ -1499,20 +1494,10 @@
     "key": "74ee68df9620c498c2269929ed9b69c8",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Peace_of_Mind_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
-  "795": {
-    "kid": "null",
-    "key": "null",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Wellness_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
   "796": {
     "kid": "2ea6469898f65ed6b88b1718c99d7a32",
     "key": "067fb846ee90c5d6820cc463eb6824c8",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Peppers_TV_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
-  "797": {
-    "kid": "null",
-    "key": "null",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Sakhi_TV_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
   "799": {
     "kid": "null",
@@ -1668,6 +1653,16 @@
     "kid": "b9d4acedc66c5660a1e06197a55bccd2",
     "key": "dd53bab1a42f41ae8f0a5c8fd286f456",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Republic_TV_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
+  },
+  "866": {
+    "kid": "70fe5d9068195768962f9d8082cb19a6",
+    "key": "c7d9d5cda12a707f979c7477ab439184",
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Jio_Exclusive_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
+  },
+  "871": {
+    "kid": "1650b54198725e7eba374faf4871bf49",
+    "key": "965bbb6d7653a2652f54648105687a6b",
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Jio_Events_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
   "875": {
     "kid": "14fc31f9d832509c9f7cdd77e622e30b",
@@ -1989,16 +1984,6 @@
     "key": "e61a9555b35455660bd91aedaf996f45",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Calvary_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
-  "978": {
-    "kid": "null",
-    "key": "null",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/TEST1_HD_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
-  "979": {
-    "kid": "null",
-    "key": "null",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/TEST2_HD_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
   "980": {
     "kid": "9dfdbea79b3750a0b23a65972611d75f",
     "key": "de9f044752f22172a26a288056806962",
@@ -2098,16 +2083,6 @@
     "kid": "201cf64076dc5a189a66de6ba5079d40",
     "key": "41f096edd73d4fdfbb7e220f5ea5cd74",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Swayam_Prabha_18_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
-  "1059": {
-    "kid": "b9d4acedc66c5660a1e06197a55bccd2",
-    "key": "dd53bab1a42f41ae8f0a5c8fd286f456",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/TEST3_HD_MOB/WDVLive/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
-  "1061": {
-    "kid": "null",
-    "key": "null",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/TEST5_HD_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
   "1066": {
     "kid": "null",
@@ -2369,11 +2344,6 @@
     "key": "33650314fe1e945017640ba9878c5de9",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/MTV_HD_Plus_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
-  "1148": {
-    "kid": "b9d4acedc66c5660a1e06197a55bccd2",
-    "key": "dd53bab1a42f41ae8f0a5c8fd286f456",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/TEST8_HD_MOB/WDVLive/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
   "1151": {
     "kid": "0d8e857858fe5e8facd51b10a39e641d",
     "key": "f6058b29e8a5017e16ab5baad78ea004",
@@ -2418,6 +2388,11 @@
     "kid": "16b26113a6e35c46ac15b40614e52f2f",
     "key": "4d8b87c8e8a18d75ca9b5a3fd8a39a57",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Tulja_Bhavani_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
+  },
+  "1163": {
+    "kid": "3ae597f8c16c52429d3240a91fd39935",
+    "key": "87c7615c0f83d6e1a2e2095120c55112",
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Jio_Esports_HD_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
   "1170": {
     "kid": "fee1327252d25521a7bc4b6b28bf66d5",
@@ -2578,11 +2553,6 @@
     "kid": "61d040ff04145a7aa7df02a97b64b6ae",
     "key": "6d5cbe6bd0d1aefe7647c404f692fae5",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Hi_Dost_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
-  "1240": {
-    "kid": "b9d4acedc66c5660a1e06197a55bccd2",
-    "key": "dd53bab1a42f41ae8f0a5c8fd286f456",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/TEST10_HD_MOB/WDVLive/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
   "1241": {
     "kid": "1c91a7add0285ab39c070d3782fc33b9",
@@ -3039,6 +3009,11 @@
     "key": "28bace379c452518c1cf439abd492070",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/KITE_Victers_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
+  "1430": {
+    "kid": "null",
+    "key": "null",
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Jio_KIDS_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
+  },
   "1432": {
     "kid": "db3015f68c4f5ef788e116c436adfac4",
     "key": "e53fa9883dc2ff70b60a364c7f2bb462",
@@ -3139,11 +3114,6 @@
     "key": "0555191ba0e5e4a58f13ef9fec2adcb1",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/History_TV18_SD_MOB/WDVLive/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
-  "1476": {
-    "kid": "c2adcfad63a35590b854ad5f2a0196da",
-    "key": "c33d877834cab56aefcee23b05430b2e",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Nick_Hindi_MOB/WDVLive/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
   "1477": {
     "kid": "b9d4acedc66c5660a1e06197a55bccd2",
     "key": "dd53bab1a42f41ae8f0a5c8fd286f456",
@@ -3193,11 +3163,6 @@
     "kid": "a81874b3b8975d539f389bf1cda15ed9",
     "key": "78696074a5a824ae553f8ae30cbae2ea",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Birla_Brainiacs_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
-  "1525": {
-    "kid": "null",
-    "key": "null",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/TEST13_HD_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
   "1527": {
     "kid": "null",
@@ -3889,6 +3854,11 @@
     "key": "dd53bab1a42f41ae8f0a5c8fd286f456",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/ET_Now_Swadesh_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
+  "1918": {
+    "kid": "26f47e5e485b544287e88e3cb7237319",
+    "key": "4fdd8958908adee8ce158b739d790ef6",
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Jio_Cricket_English_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
+  },
   "1920": {
     "kid": "6df7c5d495985867913a26342c00ac91",
     "key": "c262295c24f5553876f9ea40c381355f",
@@ -4239,6 +4209,11 @@
     "key": "4a5d7079441fb93ebbaf62501e91b640",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/22Scope_News_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
+  "2149": {
+    "kid": "1ae568e76fd05ad8a1c300a2f155a694",
+    "key": "cf44d29cd01253c82987aa254c339c8f",
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Jio_Prime_HD_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
+  },
   "2176": {
     "kid": "df96134f149957ba9e8865e795b18c02",
     "key": "e9c06dfb60df3e9e135d80c2ea9e66cb",
@@ -4308,6 +4283,11 @@
     "kid": "c2c048e439d65316beeda6ef64d5d0f8",
     "key": "e2fdc132cbdee65501b845ce414fce39",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Bhojpuri_Junction_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
+  },
+  "2230": {
+    "kid": "6017d0514d425fa38f6e80ba6dcc852f",
+    "key": "0018944b00adf2078f62386f30c68b74",
+    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Jio_Specials_HD_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
   "2233": {
     "kid": "null",
