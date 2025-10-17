@@ -89,11 +89,6 @@
     "key": "0baa1de589cf31b80cac8391466d7ad6",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Colors_Gujarati_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
-  "198": {
-    "kid": "83f6aa30230852c3af409b10ae9a51ac",
-    "key": "b04c71550e63311f9f295bb3e58a7044",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Colors_Oriya_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
   "202": {
     "kid": "4b1521eed3df5f339451bce846950abd",
     "key": "b32833fe11a251724bc6c0b84cc02449",
@@ -3989,16 +3984,6 @@
     "key": "90131e06c10af63ccbced60503af55bb",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/News_21_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
-  "2010": {
-    "kid": "0c2d686ae93b58caa8fdc48384033724",
-    "key": "81a04160b53b16a73772731dd8345ca5",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Ekamra_Nilach_akra_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
-  "2011": {
-    "kid": "33bbcd80726f5ff582c4e5c4396ea254",
-    "key": "77f60bcbd2c0f8206eef8bc43ab14e1f",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Ekamra_Bharat_Odia_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
   "2012": {
     "kid": "747f810646615100a3c89dec5545ea00",
     "key": "14ab08d2c8bd1faa4dff07c72354d582",
@@ -4013,16 +3998,6 @@
     "kid": "null",
     "key": "null",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Rajpath_TV_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
-  "2015": {
-    "kid": "6b99f82c285056108dbe1751bacfee50",
-    "key": "e2eefce8cda68ee7a0657730ca8d4f47",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Ekamra_Music_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
-  "2016": {
-    "kid": "b52b6179448959d8bab3b0fae1b82809",
-    "key": "79044d92f96a8155b1c3ac74cfadfcd4",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Ekamra_Cinema_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
   "2017": {
     "kid": "9ff3bbd60b0a5c928d2b174b9147034e",
@@ -4233,11 +4208,6 @@
     "kid": "c2be97a78fce55ff940555cfd0dfec1c",
     "key": "2aadf7c49ae548abe3a758003abc8913",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/TV24_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
-  "2227": {
-    "kid": "f245b85b0f535460b0bbd0cad72a1f1f",
-    "key": "ef89c85bf6622c7b055a02375761be78",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Jatra_Ekamra_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
   "2228": {
     "kid": "c25b0c444e2c5dfe95631b81fd0fee6f",
@@ -4943,11 +4913,6 @@
     "kid": "11f67fae08a1539bb3f575430ca76e6f",
     "key": "f73f82c8abdb6b9e04a9f15f312d815a",
     "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Shree_Jagannath_TV_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
-  },
-  "3073": {
-    "kid": "a0d362b13efc5ee6b2f373c43fcca5e4",
-    "key": "177d508afc6e3f28c93b1648b2cf2c23",
-    "url": "https://jiotvmblive.cdn.jio.com/bpk-tv/Ekamra_Manoranjan_BTS/output/index.mpd?__hdnea__=st=1760683804~exp=1760770204~acl=/*~hmac=541ccaf78ba3bba4f1900bf62b71a558c8447342635d89844a61d7c90a64a959"
   },
   "3095": {
     "kid": "e1441873d9bb5f1f84ca9a6a583f8d90",
