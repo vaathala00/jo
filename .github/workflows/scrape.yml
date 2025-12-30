@@ -2,7 +2,7 @@ name: Fetch and Update Stream JSON
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # Every 10 minutes
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -40,13 +40,11 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
 
-          # Copy generated files
+          # copy from scraper to root
           cp scraper/stream.json stream.json
           cp scraper/stream1.json stream1.json
 
-          # Commit if changed
           git add stream.json stream1.json
-          git diff --cached --quiet || git commit -m "📥 updated stream.json & stream1.json"
+          git diff --cached --quiet || git commit -m "📥 update stream.json & stream1.json"
 
-          # Push safely
           git push origin main || echo "No changes to push"
