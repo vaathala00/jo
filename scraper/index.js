@@ -1,29 +1,35 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const STREAM_JSON_URL = "https://raw.githubusercontent.com/alex8875/m3u/refs/heads/main/jtv.m3u";
+const STREAM_URL = "https://raw.githubusercontent.com/alex8875/m3u/refs/heads/main/jtv.m3u";
 const OUTPUT_FILE = "stream.json";
 
 async function fetchAndSaveJson() {
   try {
-    const { data } = await axios.get(STREAM_JSON_URL);
+    // Tell axios to get text, not try to parse JSON
+    const response = await axios.get(STREAM_URL, { responseType: "text" });
+    const data = response.data;
 
-    // Make sure it's an array
-    if (!Array.isArray(data)) {
-      throw new Error("Expected JSON array from the stream URL");
-    }
-
+    const lines = data.split("\n");
     const result = {};
-    let idCounter = 143; // start from 143 as per your example
+    let idCounter = 143; // Start at 143 as in your example
 
-    for (const item of data) {
-      if (!item.license || !item.url) continue;
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i].trim();
 
-      result[idCounter++] = {
-        kid: item.license.kid,
-        key: item.license.key,
-        url: item.url
-      };
+      if (line.startsWith("#KODIPROP:inputstream.adaptive.license_key=")) {
+        const [kid, key] = line.split("=")[1].split(":");
+
+        // The URL is usually two lines below
+        const urlLine = lines[i + 2];
+        if (urlLine && urlLine.startsWith("http")) {
+          result[idCounter++] = {
+            kid,
+            key,
+            url: urlLine.trim()
+          };
+        }
+      }
     }
 
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 2), "utf-8");
