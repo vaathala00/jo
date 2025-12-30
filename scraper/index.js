@@ -6,37 +6,43 @@ const OUTPUT_FILE = "stream.json";
 
 async function fetchAndSaveJson() {
   try {
-    // Tell axios to get text, not try to parse JSON
     const response = await axios.get(STREAM_URL, { responseType: "text" });
-    const data = response.data;
+    const lines = response.data.split("\n");
 
-    const lines = data.split("\n");
     const result = {};
-    let idCounter = 143; // Start at 143 as in your example
+    let idCounter = 143; // start from 143
 
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i].trim();
+    let currentKid = null;
+    let currentKey = null;
 
-      if (line.startsWith("#KODIPROP:inputstream.adaptive.license_key=")) {
-        const [kid, key] = line.split("=")[1].split(":");
+    for (const line of lines) {
+      const trimmed = line.trim();
 
-        // The URL is usually two lines below
-        const urlLine = lines[i + 2];
-        if (urlLine && urlLine.startsWith("http")) {
-          result[idCounter++] = {
-            kid,
-            key,
-            url: urlLine.trim()
-          };
-        }
+      // Extract kid and key
+      if (trimmed.startsWith("#KODIPROP:inputstream.adaptive.license_key=")) {
+        const [kid, key] = trimmed.split("=")[1].split(":");
+        currentKid = kid;
+        currentKey = key;
+      }
+
+      // Extract URL after license
+      if (currentKid && currentKey && trimmed.startsWith("http")) {
+        result[idCounter++] = {
+          kid: currentKid,
+          key: currentKey,
+          url: trimmed
+        };
+        // Reset for next entry
+        currentKid = null;
+        currentKey = null;
       }
     }
 
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 2), "utf-8");
     console.log("✅ stream.json saved successfully.");
 
-  } catch (error) {
-    console.error("❌ Failed to fetch JSON:", error.message);
+  } catch (err) {
+    console.error("❌ Failed to fetch M3U:", err.message);
     process.exit(1);
   }
 }
