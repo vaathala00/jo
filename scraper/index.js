@@ -2,16 +2,15 @@ const axios = require("axios");
 const fs = require("fs");
 
 const STREAM_JSON_URL = "https://jo-json.vodep39240327.workers.dev";
-const OUTPUT_FILE = "stream1.json";
+const RAW_OUTPUT_FILE = "scraper/stream.json";
+const TRANSFORMED_OUTPUT_FILE = "scraper/stream1.json";
 
 function formatNameFromUrl(url) {
-  // Extract the channel name from URL, e.g., Colors_Tamil from .../Colors_Tamil_MOB/...
   const match = url.match(/\/bpk-tv\/([^_]+_[^_]+)_MOB\//);
   return match ? match[1].replace("_", " ") : "Unknown";
 }
 
 function formatLogoUrl(name) {
-  // Replace spaces with underscores to match logo URL pattern
   const logoName = name.replace(/\s+/g, "_");
   return `https://jiotv.catchup.cdn.jio.com/dare_images/images/${logoName}.png`;
 }
@@ -21,11 +20,16 @@ function formatLink(url, name, keyId, key) {
   return `https://dash.vodep39240327.workers.dev/?url=${encodeURIComponent(url)}&name=${encodedName}&keyId=${keyId}&key=${key}&cookie=__hdnea__`;
 }
 
-async function fetchAndTransformJson() {
+async function fetchAndSaveBoth() {
   try {
     const response = await axios.get(STREAM_JSON_URL);
     const rawData = response.data;
 
+    // Save raw JSON
+    fs.writeFileSync(RAW_OUTPUT_FILE, JSON.stringify(rawData, null, 2), "utf-8");
+    console.log(`✅ ${RAW_OUTPUT_FILE} saved successfully.`);
+
+    // Transform and save stream1.json
     const transformed = Object.entries(rawData).map(([id, item]) => {
       const name = formatNameFromUrl(item.url);
       const logo = formatLogoUrl(name);
@@ -39,12 +43,12 @@ async function fetchAndTransformJson() {
       };
     });
 
-    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(transformed, null, 2), "utf-8");
-    console.log(`✅ ${OUTPUT_FILE} saved successfully.`);
+    fs.writeFileSync(TRANSFORMED_OUTPUT_FILE, JSON.stringify(transformed, null, 2), "utf-8");
+    console.log(`✅ ${TRANSFORMED_OUTPUT_FILE} saved successfully.`);
   } catch (error) {
     console.error("❌ Failed to fetch or transform JSON:", error.message);
     process.exit(1);
   }
 }
 
-fetchAndTransformJson();
+fetchAndSaveBoth();

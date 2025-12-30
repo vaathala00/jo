@@ -43,8 +43,9 @@ jobs:
           git pull --rebase origin main
 
           cp scraper/stream.json stream.json
-          git add stream.json
-          git diff-index --quiet HEAD || git commit -m "📥 updated stream.json from remote JSON"
+   cp scraper/stream1.json stream1.json
+          git add stream.json stream1.json
+          git diff-index --quiet HEAD || git commit -m "📥 updated stream.json & stream1.json  from remote JSON"
 
           if [ "$(git rev-parse HEAD)" != "$(git rev-parse @{u})" ]; then
             git push origin main
