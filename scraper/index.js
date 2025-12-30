@@ -10,27 +10,33 @@ async function fetchAndSaveJson() {
     const lines = response.data.split("\n");
 
     const result = {};
-    let idCounter = 143; // start from 143
 
     let currentKid = null;
     let currentKey = null;
+    let currentTvgId = null;
 
     for (const line of lines) {
       const trimmed = line.trim();
 
+      // Extract tvg-id from #EXTINF
+      if (trimmed.startsWith("#EXTINF:")) {
+        const match = trimmed.match(/tvg-id="(\d+)"/);
+        currentTvgId = match ? match[1] : null;
+      }
+
       // Extract kid and key
-      if (trimmed.startsWith("#KODIPROP:inputstream.adaptive.license_key=")) {
+      else if (trimmed.startsWith("#KODIPROP:inputstream.adaptive.license_key=")) {
         const [kid, key] = trimmed.split("=")[1].split(":");
         currentKid = kid;
         currentKey = key;
       }
 
       // Extract URL after license
-      if (currentKid && currentKey && trimmed.startsWith("http")) {
+      else if (currentKid && currentKey && currentTvgId && trimmed.startsWith("http")) {
         // Remove extra &xxx=... if present
         const cleanUrl = trimmed.split("&xxx=")[0];
 
-        result[idCounter++] = {
+        result[currentTvgId] = {
           kid: currentKid,
           key: currentKey,
           url: cleanUrl
@@ -39,6 +45,7 @@ async function fetchAndSaveJson() {
         // Reset for next entry
         currentKid = null;
         currentKey = null;
+        currentTvgId = null;
       }
     }
 
