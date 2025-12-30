@@ -11,8 +11,8 @@ function formatNameFromUrl(url) {
   return match ? match[1].replace("_", " ") : "Unknown";
 }
 
-function formatLogoUrl(name) {
-  const logoName = name.replace(/\s+/g, "_");
+ // Remove _BTS suffix if it exists
+  logoName = logoName.replace(/_BTS$/i, "");
   return `https://jiotv.catchup.cdn.jio.com/dare_images/images/${logoName}.png`;
 }
 
