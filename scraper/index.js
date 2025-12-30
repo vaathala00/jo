@@ -27,11 +27,15 @@ async function fetchAndSaveJson() {
 
       // Extract URL after license
       if (currentKid && currentKey && trimmed.startsWith("http")) {
+        // Remove extra &xxx=... if present
+        const cleanUrl = trimmed.split("&xxx=")[0];
+
         result[idCounter++] = {
           kid: currentKid,
           key: currentKey,
-          url: trimmed
+          url: cleanUrl
         };
+
         // Reset for next entry
         currentKid = null;
         currentKey = null;
