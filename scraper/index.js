@@ -2,7 +2,7 @@ const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
 
-const STREAM_JSON_URL = "https://jo-json.vodep39240327.workers.dev";
+const STREAM_JSON_URL = "https://raw.githubusercontent.com/alex8875/m3u/refs/heads/main/jtv.m3u";
 
 // IMPORTANT: save INSIDE scraper folder
 const RAW_OUTPUT_FILE = path.join(__dirname, "stream.json");
