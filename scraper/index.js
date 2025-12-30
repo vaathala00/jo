@@ -1,9 +1,10 @@
 const axios = require("axios");
 const fs = require("fs");
+const path = require("path");
 
 const STREAM_JSON_URL = "https://jo-json.vodep39240327.workers.dev";
-const RAW_OUTPUT_FILE = "scraper/stream.json";
-const TRANSFORMED_OUTPUT_FILE = "scraper/stream1.json";
+const RAW_OUTPUT_FILE = path.join(__dirname, "../stream.json");
+const TRANSFORMED_OUTPUT_FILE = path.join(__dirname, "../stream1.json");
 
 function formatNameFromUrl(url) {
   const match = url.match(/\/bpk-tv\/([^_]+_[^_]+)_MOB\//);
@@ -35,9 +36,9 @@ async function fetchAndSaveBoth() {
       const logo = formatLogoUrl(name);
 
       return {
-        name: name,
-        id: id,
-        logo: logo,
+        name,
+        id,
+        logo,
         group: "Jio+",
         link: formatLink(item.url, name, item.kid, item.key)
       };

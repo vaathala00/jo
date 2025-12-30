@@ -42,10 +42,6 @@ jobs:
 
           git pull --rebase origin main
 
-          # Copy both files to repo root (optional)
-          cp scraper/stream.json stream.json
-          cp scraper/stream1.json stream1.json
-
           git add stream.json stream1.json
           git diff-index --quiet HEAD || git commit -m "📥 updated stream.json & stream1.json from remote JSON"
 
