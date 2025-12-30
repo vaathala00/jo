@@ -32,7 +32,7 @@ jobs:
           cd scraper
           npm start
 
-      - name: Commit and Push stream.json
+      - name: Commit and Push JSON files
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -42,13 +42,14 @@ jobs:
 
           git pull --rebase origin main
 
+          # Copy both files to repo root (optional)
           cp scraper/stream.json stream.json
-   cp scraper/stream1.json stream1.json
+          cp scraper/stream1.json stream1.json
+
           git add stream.json stream1.json
-          git diff-index --quiet HEAD || git commit -m "📥 updated stream.json & stream1.json  from remote JSON"
+          git diff-index --quiet HEAD || git commit -m "📥 updated stream.json & stream1.json from remote JSON"
 
           if [ "$(git rev-parse HEAD)" != "$(git rev-parse @{u})" ]; then
             git push origin main
           else
             echo "No changes to push."
-          fi
