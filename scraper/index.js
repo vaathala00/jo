@@ -18,7 +18,7 @@ async function fetchAndSaveJson() {
     let currentLogo = null;
     let currentChannel = null;
     let currentUserAgent = null;
-    let currentCookie = null;
+    let currentCookie = null; // 1. Variable to store the cookie
 
     for (const line of lines) {
       const trimmed = line.trim();
@@ -48,16 +48,18 @@ async function fetchAndSaveJson() {
         currentUserAgent = trimmed.split("=")[1];
       }
 
-      // Extract Cookie from #EXTHTTP
+      // 2. Extract Cookie from #EXTHTTP
       else if (trimmed.startsWith("#EXTHTTP:")) {
         try {
+          // Remove the prefix to get the JSON part
           const jsonStr = trimmed.replace("#EXTHTTP:", "");
           const parsed = JSON.parse(jsonStr);
+          
           if (parsed && parsed.cookie) {
             currentCookie = parsed.cookie;
           }
         } catch (e) {
-          // Ignore malformed JSON
+          console.warn("Skipping malformed EXTHEADER line");
         }
       }
 
@@ -66,16 +68,10 @@ async function fetchAndSaveJson() {
         // Remove extra &xxx=... if present
         const cleanUrl = trimmed.split("&xxx=")[0];
 
+        // 3. Append cookie to URL if it exists
         let finalUrl = cleanUrl;
-
         if (currentCookie) {
-          // 1. Append the main cookie parameter
           finalUrl += `?${currentCookie}`;
-          
-          // 2. Append the xxx parameter in the specific format requested
-          // Format: &xxx=%7Ccookie=[currentCookie]
-          // Note: %7C is the URL encoded version of the pipe character |
-          finalUrl += `&xxx=%7Ccookie=${currentCookie}`;
         }
 
         result[currentTvgId] = {
@@ -96,7 +92,7 @@ async function fetchAndSaveJson() {
         currentLogo = null;
         currentChannel = null;
         currentUserAgent = null;
-        currentCookie = null;
+        currentCookie = null; // 4. Reset cookie
       }
     }
 
