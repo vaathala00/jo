@@ -1,7 +1,7 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const STREAM_URL = "https://raw.githubusercontent.com/cloudplay97/m3u/main/jiotv+.m3u";
+const STREAM_URL = "https://perelive.pages.dev/jiotv.m3u";
 const OUTPUT_FILE = "stream.json";
 
 async function fetchAndSaveJson() {
