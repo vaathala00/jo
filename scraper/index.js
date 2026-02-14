@@ -1,7 +1,7 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const STREAM_URL = "https://perelive.pages.dev/jiotv.m3u";
+const STREAM_URL = "https://raw.githubusercontent.com/cloudplay97/m3u/main/jiotv-mb.m3u";
 const OUTPUT_FILE = "stream.json";
 
 async function fetchAndSaveJson() {
@@ -18,7 +18,6 @@ async function fetchAndSaveJson() {
     let currentLogo = null;
     let currentChannel = null;
     let currentUserAgent = null;
-    let currentCookie = null; // 1. Variable to store the cookie
 
     for (const line of lines) {
       const trimmed = line.trim();
@@ -48,36 +47,15 @@ async function fetchAndSaveJson() {
         currentUserAgent = trimmed.split("=")[1];
       }
 
-      // 2. Extract Cookie from #EXTHTTP
-      else if (trimmed.startsWith("#EXTHTTP:")) {
-        try {
-          // Remove the prefix to get the JSON part
-          const jsonStr = trimmed.replace("#EXTHTTP:", "");
-          const parsed = JSON.parse(jsonStr);
-          
-          if (parsed && parsed.cookie) {
-            currentCookie = parsed.cookie;
-          }
-        } catch (e) {
-          console.warn("Skipping malformed EXTHEADER line");
-        }
-      }
-
-      // Extract URL and build object
+      // Extract URL after license
       else if (currentKid && currentKey && currentTvgId && trimmed.startsWith("http")) {
         // Remove extra &xxx=... if present
         const cleanUrl = trimmed.split("&xxx=")[0];
 
-        // 3. Append cookie to URL if it exists
-        let finalUrl = cleanUrl;
-        if (currentCookie) {
-          finalUrl += `?${currentCookie}`;
-        }
-
         result[currentTvgId] = {
           kid: currentKid,
           key: currentKey,
-          url: finalUrl,
+          url: cleanUrl,
           group_title: currentGroup,
           tvg_logo: currentLogo,
           channel_name: currentChannel,
@@ -92,7 +70,6 @@ async function fetchAndSaveJson() {
         currentLogo = null;
         currentChannel = null;
         currentUserAgent = null;
-        currentCookie = null; // 4. Reset cookie
       }
     }
 
