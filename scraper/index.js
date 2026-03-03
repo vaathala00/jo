@@ -1,7 +1,7 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const STREAM_URL = "https://raw.githubusercontent.com/cloudplay97/m3u/main/jiotv-mb.m3u";
+const STREAM_URL = "https://pocket-tv-tamil-5afe35.gitlab.io/jiostar.m3u";
 const OUTPUT_FILE = "stream.json";
 
 async function fetchAndSaveJson() {
@@ -54,7 +54,7 @@ async function fetchAndSaveJson() {
 
         // --- MODIFICATION START ---
         // Replace the old domain with the new domain
-        cleanUrl = cleanUrl.replace("jiotvmblive.cdn.jio.com", "jiotvbpkmob.cdn.jio.com");
+        cleanUrl = cleanUrl.replace("jiotvbpkmob.cdn.jio.com", "jiotvbpkmob.cdn.jio.com");
         // --- MODIFICATION END ---
 
         result[currentTvgId] = {
