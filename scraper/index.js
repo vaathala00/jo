@@ -1,7 +1,7 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const STREAM_URL = "https://pocket-tv-tamil-5afe35.gitlab.io/jiostar.m3u";
+const STREAM_URL = "https://m3u-86e.pages.dev/bpk.txt";
 const OUTPUT_FILE = "stream.json";
 
 async function fetchAndSaveJson() {
@@ -50,12 +50,7 @@ async function fetchAndSaveJson() {
       // Extract URL after license
       else if (currentKid && currentKey && currentTvgId && trimmed.startsWith("http")) {
         // Remove extra &xxx=... if present
-        let cleanUrl = trimmed.split("&xxx=")[0];
-
-        // --- MODIFICATION START ---
-        // Replace the old domain with the new domain
-        cleanUrl = cleanUrl.replace("jiotvbpkmob.cdn.jio.com", "jiotvbpkmob.cdn.jio.com");
-        // --- MODIFICATION END ---
+        const cleanUrl = trimmed.split("&xxx=")[0];
 
         result[currentTvgId] = {
           kid: currentKid,
