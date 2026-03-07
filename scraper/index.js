@@ -1,7 +1,7 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const STREAM_URL = "https://m3u-86e.pages.dev/bpk.txt";
+const STREAM_URL = "https://raw.githubusercontent.com/pk3011/pkjtv/refs/heads/main/jtv.m3u";
 const OUTPUT_FILE = "stream.json";
 
 async function fetchAndSaveJson() {
